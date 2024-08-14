@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/longScriptFragment">
+
+    <fragment
+        android:id="@+id/longScriptFragment"
+        android:name="com.st10079970.kodingquest.LongScriptFragment"
+        android:label="Long Script">
+        <action
+            android:id="@+id/action_longScriptFragment_to_singleLineFragment"
+            app:destination="@id/singleLineFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/singleLineFragment"
+        android:name="com.st10079970.kodingquest.SingleLineFragment"
+        android:label="Single Line">
+        <action
+            android:id="@+id/action_singleLineFragment_to_longScriptFragment"
+            app:destination="@id/longScriptFragment" />
+    </fragment>
+</navigation>
